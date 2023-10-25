@@ -19,8 +19,12 @@
     ],
     "routes": [
         {
+            "src": "/static/(.*)",
+            "dest": "/static/$1"
+        },
+        {
             "src": "/(.*)",
-            "dest": "vercel_app/wsgi.py"
+            "dest": "studybud/wsgi.py"
         }
     ]
 }
